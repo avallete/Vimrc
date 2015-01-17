@@ -1,5 +1,11 @@
+execute pathogen#infect()
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+filetype on
 set number
-colorscheme koehler
+colorscheme solarized
 filetype plugin indent on
 syntax on
 set mouse=a
@@ -18,7 +24,6 @@ if has("autocmd")
 	\ endif
  endif
 set cursorline
-hi Cursorline ctermbg=darkgrey guibg=#771c1c cterm=none
 set shiftround
 set ignorecase
 filetype on
@@ -27,3 +32,5 @@ inoremap ( ()<left>
 inoremap { {}<left>
 highlight WhitespaceEOL ctermbg=red guibg=red
 match WhitespaceEOL /\s\+$/
+nnoremap <F5> :GundoToggle<CR>
+nnoremap <F6> :NERDTreeToggle<CR>

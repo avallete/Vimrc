@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/Volumes/Data/nfs/zfs-student-2/users/2014/avallete/GitPerso/Ft_sh1/src'
+let g:netrw_dirhist_2='/home/sivenruot/.vim'
+let g:netrw_dirhist_3='/home/sivenruot'
